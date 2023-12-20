@@ -38,10 +38,7 @@ another child.
 2. a parallel fetching: the parent will create a child for each location (i.e., without waiting
 for a child to complete) and only once all children have been created, the parent will wait
 for all of them to terminate.
-You will then compare the performance of the two types of fetchers using the time utility.
-Both fetchers will use the Linux curl program in order to communicate with the weather API
-and fetch the weather information that is formatted according to the JavaScript Object Notation
-format. You can read more about the https://www.tutorialspoint.com/json/json quick guide.htm.
+
 The command line to fetch the JSON weather data for location at latitude location 52.52 and
 longitude location 13.41 and then save it in file file1.json is as follows:
 /usr/bin/curl -o file1.json "https://api.open-meteo.com/v1/forecast?latitude=52.520000&longitude=13.410000&current weather=True
